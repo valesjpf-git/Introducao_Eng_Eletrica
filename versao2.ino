@@ -52,7 +52,7 @@ void setup() {
 }
 
 void loop() {
-  // --- Botoes ---
+  // Botoes
   if (millis() - ultimoClique > DEBOUNCE) {
     if (digitalRead(PIN_BTN_MAIS) == LOW) {
       velocidade = constrain(velocidade + PASSO, 0, 255);
